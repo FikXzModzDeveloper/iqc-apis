@@ -7,17 +7,16 @@ const PORT = process.env.PORT || 8080;
 
 protection(app);
 
-app.use('/iqc', iqcRoutes);
+app.use('/v1/iqc', iqcRoutes);
 
 app.get('/', (req, res) => {
-  res.json({ status: "online", author: "Fikkk" });
+  res.json({ status: "online", version: "v1" });
 });
 
 app.use((req, res) => {
-  res.status(404).json({ success: false, message: "Ngapain bjirr" });
+  res.status(404).json({ success: false, message: "Endpoint tidak ditemukan" });
 });
 
 app.listen(PORT, () => {
   console.log(`Server aktif di port ${PORT}`);
 });
-
