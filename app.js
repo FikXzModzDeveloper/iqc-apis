@@ -10,11 +10,11 @@ protection(app);
 app.use('/v1/iqc', iqcRoutes);
 
 app.get('/', (req, res) => {
-  res.json({ status: "online", version: "v1" });
+  res.send(" gak ada hatemel jir😛😂 ");
 });
 
 app.use((req, res) => {
-  res.status(404).json({ success: false, message: "Endpoint tidak ditemukan" });
+  res.status(404).json({ success: false, message: "ngapain jir😂 | 404 bjir" });
 });
 
 app.listen(PORT, () => {
