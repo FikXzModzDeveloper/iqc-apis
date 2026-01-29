@@ -5,4 +5,3 @@ const controller = require('../controllers/iqcController');
 router.get('/', controller.generateImage);
 
 module.exports = router;
-
