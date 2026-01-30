@@ -34,7 +34,7 @@ Proyek ini dibangun dengan struktur modular yang bersih tanpa sub-folder `src` u
 ├── middlewares/      # Middeware
 ├── routes/           # Definisi endpoint API
 ├── app.js            # Entry point filss
-├── Dockerfile        # Konfigurasi container untuk deployment
+├── Dockerfile        # opsional jika menggunakan docker
 └── package.json      # Dependensi & script project
 ```
 🚀 API Endpoints
